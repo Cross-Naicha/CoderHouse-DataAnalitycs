@@ -1,0 +1,60 @@
+Si bien la entrega no requiere todo el material que inclui, adjunto todo mi espacio de trabajo por simple prevision. 
+
+En lo que respecta a la entrega en si, los archivos/documentos de interes son:
+
+	1. "PF Daruich.pbix". Presentacion PowerBI.
+
+	2. "Documentación - Presentación.pdf". Documentacion, parte 1.
+	3. "Documentación - Tecnica.pdf". Documentacion, parte 2.
+	4. "El Camino de los Datos.ipynb". Documentacion, perte 3.
+
+	5. "Goles & Mundiales.csv". Fuente de los datos.
+
+La razon de la separacion en 3 partes de la documentacion es simplemente la practicidad:
+	La primera parte se ajustaba mejor a un formato Power Point; 
+	La segunda al formato Word;
+	La ultima a un formato Jupyter Notebook (contiene codigo que es ejecutable).
+
+Ademas reconozco que a lo largo de la cursada descubri los Notebooks, y senti la necesidad de usarlos para algo!
+
+--- --- --- --- --- --- --- --- --- --- 
+
+Mas alla de lo anterior, en la carpeta se pueden encontrar:
+
+"Paquete Python": 
+
+	a. "General_to_SQL.py";
+	b. "Continentes_to_SQL.py", "Continentes_Normalizador.py";
+	c. "Goleadores_to_SQL.py", "Goleadores_Normalizador.py";
+	d. "Paises_to_SQL.py", "Paises_Normalizador.py"
+
+	En esencia, "to_SQL" son los codigos que use para extraer la informacion del .xlsx (1), modificar pequeñas cuestiones de los datos (2), y escribir los queries para crear luego la base de datos en SQL (3). TODO ESTO SE PUEDE VER EN LA PARTE 3 DE LA DOCUMENTACION. Los "_Normalizador" son los que transforman los datos en codigo, para que ocupen menos espacio.
+
+"Paquete de Imagenes":
+
+	a. "Esquema ER.jpg". Si bien el diseño del esquema lo logre con el sitio "Miro", hice una captura y guarde en .jpg.
+	b. "Daruich, Nicolás Alberto.png". 
+	c. "DATA ANALYTICS CoderHouse.png".
+	d. "Marcadores.png".
+	e. "Portada.png".
+
+	Se utilizan en la presentacion de PowerBI.
+
+"Paquete SQL":
+
+	a. "Conexiones.sql"
+	b. "Goleadores.sql"
+	c. "Goles & Mundiales.sql"
+	d. "Paises.sql"
+
+	El camino para lograr dichos archivos se explica en la parte 3 de la documentacion. En resumen: quise aprovechar lo que vimos cursando, y trate de usar SQL lo maximo posible. So bien podria simplemente haber usado mi .xlsx para importar datos a mi PBI, hubise sido facil (y por ende aburrido).
+
+"Paquete de Origen":
+
+	a. "Goles & Mundiales.xlsx". Datos procesados desde la base original: para tener una mejor idea de los datos, y como base para la creacion de la base para PBI.
+	b. "Tablas.xlsx". Origen de las tablas insertadas en la documentacion.
+	c. "Power Query.txt". Registro de las transformaciones en Power Query.
+	d. "Documentacion - Tecnica.docx". Origen de la misma documentacion.
+	e. "Documentacion - Presentacion.pptx". Origen de la misma documentacion.
+
+

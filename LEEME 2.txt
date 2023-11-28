@@ -1,0 +1,35 @@
+Recomendaciones y sugerencias producto de la ultima pre-entrega:
+
+1. "Buenas Noches Nicolás! Muy bien por la entrega. Con respecto al Tablero:
+La portada y las solapas se crearon adecuadamente, los botones funcionan muy bien.
+Aun así, creo que sería mejor dejar la grilla de botones siempre en el mismo lugar de arriba (veo que en la solapa goleador está debajo y puede resultar un poco chocante para el usuario al principio)"
+
+- CORREGIDO!
+
+
+2. "El Modelo Relacional está Perfecto, todas las tablas se justifican y están bien relacionadas. La Tabla Calendario es super importante, bien por agregarla. Las Tablas Medidas también.
+Los gráficos están bien elegidos y los indicadores están correctamente diseñados. En particular los de la solapa de JUG y DIA me gustaron mucho. Sería bueno agregar un botón de borrar filtros."
+
+- AGREGADOS LOS BOTONES PARA REESTABLECER FILTROS. Si bien los habia hecho para la entrega anterior, en lugar de usar un marcador que devuelva al estado original, use la opcion de borrar los filtros: cuando lo tocas, te borra absolutamente todo (me rompio el tablero). Para no arriesgar, entregue una version anterior.
+
+
+3. "Otra recomendación para la solapa de GOL, es agregar la Leyenda en el gráfico de barras apiladas así podamos ver a que año refiere cada color de las barras. Recuerda que puedes usar Tooltips como vimos en clase para ahondar más aún en los datos de cada gráfico."
+
+- AGREGADO. Lo hice tanto como etiqueta dentro del grafico, como con ToolTip.
+
+
+4. "Además sería bueno verificar el funcionamiento del marcador que indica "Mejor" en la solapa de JUG. Ya que sólo estás mostrando el último mundial de la tabla goleadores, es decir el más reciente. Sería mejor usar medidas de tendencia central para agrupar a los jugadores por cantidad de goles realizados y en base a eso filtrar por sus mejores mundiales. Es un poco laborioso, pero puedo compartirte una medida que está orientada a ese objetivo, está basada en el ejemplo de CoderHouse que practicamos en clase."
+
+- Lo probe, y esta funcionando como espero que lo haga. Esa tarjeta muestra "Unico" cuando el jugador solo participo en 1 mundial; y "Mejor", cuando tiene mas de 1. En el primer caso, mostrar el numero de ese unico mundial; en el segundo, la participacion con mas goles.
+- Para no hacer oidos sordos a la recomendacion de tendencias centrales, hice una nueva solapa dedicada a esa clase: Es la ultima, "Tendencias".
+
+
+5. "Con respecto a la Documentación: Los apartados anteriores se mantienen y le dan estructura al proyecto. Cabe mencionar que el formato del PDF es Excelente. Las transformaciones en el dataset están super completas y se evidencian en el mismo. Bien por incluir la explicación detallada de las medidas calculadas y sus fórmulas! Para la entrega final será necesario agregar una explicación breve de cada solapa del Reporte."
+
+- Fui mas alla y arme no solo una breve descripcion de cada solapa, sino la funcion y expectativa de cada instrumento dentro de la misma.
+
+
+6. "Teniendo en cuenta que ésta es una de las últimas entregas, quiero felicitarte por el desarrollo de todo el proyecto. Fueron casi 3 meses con mucho trabajo y dedicación! 
+Muchas gracias! Seguimos por el chat igualmente."
+
+- GRACIAS A USTEDES.

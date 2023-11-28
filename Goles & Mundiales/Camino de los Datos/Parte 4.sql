@@ -1,0 +1,7 @@
+UPDATE Paises SET FK_Continente = '1' WHERE FK_Continente = 'África'
+UPDATE Paises SET FK_Continente = '2' WHERE FK_Continente = 'América del Sur'
+UPDATE Paises SET FK_Continente = '3' WHERE FK_Continente = 'Oceanía'
+UPDATE Paises SET FK_Continente = '4' WHERE FK_Continente = 'Europa'
+UPDATE Paises SET FK_Continente = '5' WHERE FK_Continente = 'América del Norte'
+UPDATE Paises SET FK_Continente = '6' WHERE FK_Continente = 'Asia'
+UPDATE Paises SET FK_Continente = '7' WHERE FK_Continente = 'América Central'

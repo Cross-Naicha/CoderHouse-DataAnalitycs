@@ -1,0 +1,42 @@
+= Excel.CurrentWorkbook(){[Name="Datos_Original"]}[Content]
+
+= Table.TransformColumnTypes(Origen,{{"Fecha", type date}, {"Local", type text}, {"Visitante", type text}, {"Anota", type text}, {"Goleador", type text}, {"Minutos", Int64.Type}, {"GC", type logical}, {"PEN", type logical}})
+
+
+= Table.AddColumn(#"Tipo cambiado", "Recibe", each if [Anota] = [Local] then [Visitante] else [Local])
+
+= Table.ReorderColumns(#"Personalizada agregada",{"Fecha", "Local", "Visitante", "Anota", "Recibe", "Goleador", "Minutos", "GC", "PEN"})
+
+= Table.TransformColumnTypes(#"Columnas reordenadas",{{"Recibe", type text}})
+
+= Table.RemoveColumns(#"Tipo cambiado1",{"Local", "Visitante"})
+
+= Table.AddColumn(#"Columnas quitadas", "Tiempo", each if [Minutos] > 105 then 3 else if [Minutos] > 90 then 2 else if [Minutos] > 45 then 1 else 0)
+
+= Table.ReorderColumns(#"Personalizada agregada1",{"Fecha", "Anota", "Recibe", "Goleador", "Minutos", "Tiempo", "GC", "PEN"})
+
+= Table.TransformColumnTypes(#"Columnas reordenadas1",{{"Tiempo", Int64.Type}})
+
+= Table.AddColumn(#"Tipo cambiado2", "Tipo", each if [GC] then 2 else if [PEN] then 1 else 0)
+
+= Table.TransformColumnTypes(#"Personalizada agregada2",{{"Tipo", Int64.Type}})
+
+= Table.ReorderColumns(#"Tipo cambiado3",{"Fecha", "Anota", "Recibe", "Goleador", "Minutos", "Tiempo", "Tipo", "GC", "PEN"})
+
+= Table.RemoveColumns(#"Columnas reordenadas2",{"GC", "PEN"})
+
+= Table.UnpivotOtherColumns(#"Columnas quitadas1", {"Fecha", "Goleador", "Minutos", "Tiempo", "Tipo"}, "Atributo", "Valor")
+
+= Table.RenameColumns(#"Columna de anulación de dinamización",{{"Atributo", "Condicion"}, {"Valor", "Pais"}})
+
+= Table.ReorderColumns(#"Columnas con nombre cambiado",{"Fecha", "Condicion", "Pais", "Goleador", "Minutos", "Tiempo", "Tipo"})
+
+TABLA CALENDARIO
+
+= Sql.Database("WEBB-STATION\SQLEXPRESS", "Goles")
+
+= Origen{[Schema="dbo",Item="General"]}[Data]
+
+= Table.SelectColumns(dbo_General,{"Fecha"})
+
+= Table.Distinct(#"Otras columnas quitadas")
